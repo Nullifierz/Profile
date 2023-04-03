@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
   
 
 body {
-    width: 100%;
-    background-color: #fff;
-    overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #navigasi {
@@ -57,21 +57,17 @@ body {
 }
 
 /* Style BACKGROUND  */
-.background {
-    width: 100%;
-}
-
-.background video {
-    width: 120%;
+#myVideo {
+  width: 120%;
 }
 
 /* Style Gambar Hero */
 .main-hero {
-    position: absolute;
-    top: -2vw;
-    left: 4vw;
-    width: 50%;
-    animation: 300ms ease-in-out 500ms 1 slideInFromRight backwards;
+  position: absolute;
+  top: -2vw;
+  left: 4vw;
+  width: 50%;
+  animation: 300ms ease-in-out 500ms 1 slideInFromRight backwards;
 }
 
 @keyframes slideInFromRight {
@@ -311,10 +307,6 @@ body {
     overflow: hidden;
   }
 
-  .background video {
-    width: auto;
-  }
-
   #navigasi {
     position: absolute;
     height: 100px;
@@ -352,6 +344,10 @@ body {
     position: relative;
     z-index: 2;
     font-size: 2.8vw;
+  }
+
+  #myVideo {
+    width: auto;
   }
     
   .main-hero {
