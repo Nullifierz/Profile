@@ -307,7 +307,11 @@ html body {
 
 /* Kodingan UntuK tampilan */
 @media screen and (max-width: 400px) {
-  .background video {
+    body {
+    overflow: hidden;
+    }
+    
+    .background video {
     width: auto;
   }
 
