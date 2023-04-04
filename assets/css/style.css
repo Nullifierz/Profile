@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+
+body {
+  width: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigasi {
+  position: absolute;
+  height: 100px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#header ul {
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#header li {
+  padding: 0;
+  margin: 0;
+}
+
+#header li.highlight {
+  background-color: #ff4655;
+  top: 36px;
+  height: 2px;
+  border-bottom: solid 3px #ff4655;
+  z-index: 2;
+  position: absolute;
+}
+
+#header li a {
+  height: 30px;
+  padding-top: 8px;
+  margin: 0 30px;
+  color: #fff;
+  font: normal 12px;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  font-size: 1.3vw;
+}
+
+/* Style BACKGROUND  */
+#myVideo {
+  width: 120%;
+}
+
+/* Style Gambar Hero */
+.main-hero {
+  position: absolute;
+  top: -2vw;
+  left: 4vw;
+  width: 50%;
+  animation: 300ms ease-in-out 500ms 1 slideInFromRight backwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main-hero img {
+    width: 185%;
+}
+
+/* Style NAMA */
+.box {
+  width: 53vw;
+  height: 8vw;
+  position: absolute;
+  margin-left: 1vw;
+  top: 42.2vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.title .block {
+  width: 0%;
+  height: inherit;
+  background: #fff;
+  position: absolute;
+  animation: mainBlock 0.7s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 1.2s;
+  display: flex;
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 5vw;
+  -webkit-animation: mainFadeIn 0.8s forwards;
+  -o-animation: mainFadeIn 0.8s forwards;
+  animation: mainFadeIn 0.8s forwards;
+  animation-delay: 1.7s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.title .block span {
+  width: 0px;
+  height: 0px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #000000;
+  -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 2s;
+  margin-left: 5px;
+  margin-top: -10px;
+  position: absolute;
+  bottom: 13px;
+  right: -12px;
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #000;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    opacity: 1;
+    bottom: 45px;
+  }
+
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px
+  }
+
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px
+  }
+
+  100% {
+    width: 7px;
+    height: 7px;
+    background: #000;
+    bottom: 13px;
+
+  }
+}
+
+.container {
+  position: absolute;
+  top: 13vw;
+  right: 1vw;
+  width: 36vw;
+  height: 34vw;
+}
+
+
+
+.container .deskripsi h2 {
+  color: #fff;
+  font-size: 1.5vw;
+  font-family: monospace;
+  -webkit-animation: mainFadeIn 0.8s forwards;
+  -o-animation: mainFadeIn 0.8s forwards;
+  animation: mainFadeIn 0.8s forwards;
+  opacity: 0;
+  animation-delay: 2s;
+}
+
+
+.container .deskripsi h1 {
+  color: #fff;
+  font-size: 4vw;
+  font-family: monospace;
+  -webkit-animation: mainFadeIn 0.8s forwards;
+  -o-animation: mainFadeIn 0.8s forwards;
+  animation: mainFadeIn 0.8s forwards;
+  opacity: 0;
+  animation-delay: 2.3s;
+}
+
+.container .deskripsi p {
+    font-family: monospace;
+    color: #fff;
+    text-align: justify;
+    padding: 10px 10px 0 0;
+    font-size: 1vw;
+    -webkit-animation: mainFadeIn 0.8s forwards;
+    -o-animation: mainFadeIn 0.8s forwards;
+    animation: mainFadeIn 0.8s forwards;
+    opacity: 0;
+    animation-delay: 2.6s;
+}
+
+@keyframes mainFadeIn{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 37.3vw;
+  right: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  top: 39vw;
+}
+
+.icon .instagram img {
+  width: 3vw;
+  margin-left: 10vw;
+  animation: 300ms ease-in-out 500ms 1 slideInFromRight backwards;
+  animation-delay: 2.6s;
+}
+
+.icon .linkedin img {
+  width: 4.1vw;
+  margin-left: 3vw;
+  position: absolute;
+  top: -0.2vw;
+  animation: 300ms ease-in-out 500ms 1 slideInFromRight backwards;
+  animation-delay: 2.8s;
+}
+
+.icon img:hover {
+  opacity: 0.7 ;
+}
+
+/* Kodingan UntuK tampilan */
+@media screen and (max-width: 400px) {
+  html {
+    overflow: hidden;
+  }
+  
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #navigasi {
+    position: absolute;
+    height: 100px;
+  }
+  
+  #header ul {
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    left: 0;
+    justify-content: center;
+  }
+  
+  #header li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #header li.highlight {
+    background-color: #ff4655;
+    top: 36px;
+    height: 2px;
+    border-bottom: solid 3px #ff4655;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  #header li a {
+    height: 30px;
+    padding-top: 8px;
+    margin: 0 30px;
+    color: #fff;
+    font: normal 12px;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    font-size: 2.8vw;
+  }
+
+  .wrapper-video {
+    aspect-ratio: ;
+    height: 198vw;
+    border: 5px solid red;
+  }
+  
+  #myVideo {
+    width: 100%;
+  }
+    
+  .main-hero {
+    position: absolute;
+    top: -1vw;
+    left: -40vw;
+    width: 100%;
+  }
+  
+  .main-hero img {
+    width: 185%;
+  }
+
+  .box {
+    height: 8vw;
+    position: absolute;
+    top: 98vw;
+    left: 25vw;
+  }
+  
+  .title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 6.5vw;
+  }                         
+
+  .container {
+    position: absolute;
+    text-align: center;
+    top: 105vw;
+    width: 100%;
+    left: 0;
+    height: 34vw;
+    padding-top: 40px;
+  } 
+
+  .container .deskripsi h2 {
+    color: #fff;
+    font-size: 3vw;
+    font-family: monospace;
+  }
+  
+  
+  .container .deskripsi h1 {
+    color: #fff;
+    font-size: 6vw;
+    font-family: monospace;
+    padding-top: 10px;
+  }
+  
+  .container .deskripsi p {
+    position: relative;
+    font-family: monospace;
+    color: #fff;
+    text-align: center;
+    font-size: 2vw;
+    width: 75%;
+    left: 13.5vw;
+  }
+
+  .icon {
+    position: absolute;
+    left: 0;
+    width: auto;
+    top: 163vw;
+  }
+  
+  .icon .instagram img {
+    width: 7vw;
+    margin-left: 38vw;
+  }
+  
+  .icon .linkedin img {
+    width: 9.5vw;
+    margin-left: 9vw;
+    position: absolute;
+    top: -0.68vw;
+  }
+}
