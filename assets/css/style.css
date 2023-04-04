@@ -303,7 +303,12 @@ body {
 
 /* Kodingan UntuK tampilan */
 @media screen and (max-width: 400px) {
+  html {
+    overflow: hidden;
+  }
+  
   body {
+    position: relative;
     overflow: hidden;
   }
 
@@ -346,8 +351,14 @@ body {
     font-size: 2.8vw;
   }
 
+  .wrapper-video {
+    aspect-ratio: ;
+    height: 198vw;
+    border: 5px solid red;
+  }
+  
   #myVideo {
-    width: auto;
+    width: 100%;
   }
     
   .main-hero {
