@@ -6,9 +6,7 @@
   
 
 html body {
-  width: 100%;
   background-color: #fff;
-  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -52,7 +50,7 @@ html body {
   text-decoration: none;
   position: relative;
   z-index: 2;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 }
 
 .deskripsi-container {
@@ -64,17 +62,17 @@ html body {
 
 .deskripsi h1 {
   font-size: 2vw;
+  font-family: fantasy;
 }
 
 .scrollProjects {
-
   position: absolute;
   top: 70px;
   padding: 0 100px;
   margin: 5%;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
-  text-align: center;
+  text-align: left;
 }
 
 .scrollProjects .projects img {
@@ -93,7 +91,7 @@ html body {
 }
 
 /* Kodingan UntuK tampilan */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 764px) {
   .background video {
     width: auto;
   }
@@ -137,7 +135,7 @@ html body {
     text-decoration: none;
     position: relative;
     z-index: 2;
-    font-size: 2.8vw;
+    font-size: 3.5vw;
   }
   .deskripsi-container {
     position: relative;
@@ -153,25 +151,19 @@ html body {
   .scrollProjects {
     position: absolute;
     top: 30vw;
-    padding: 0 100px;
+    padding: 0;
     margin: 5%;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: row;
-    text-align: center;
+    grid-auto-flow: column;
+    text-align: left;
   }
   
   .scrollProjects .projects img {
-    width: 300vw;
-    aspect-ratio: 3/2;
+    width: 400vw;
+    /* aspect-ratio: 3/2; */
     object-fit: cover;
     max-width: 100%;
-    border: 5px solid #0f1923;
     filter: grayscale(1);
     transition: all ease-in-out 0.1s;
-  }
-  
-  .scrollProjects .projects img:hover {
-    border: 5px solid #ff4655;
-    filter: grayscale(0);
   }
 }
