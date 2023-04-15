@@ -306,7 +306,7 @@ body {
   body {
     overflow-y: scroll;
   }
-  
+
   #navigasi {
     position: absolute;
     height: 100px;
@@ -360,9 +360,9 @@ body {
     
   .main-hero {
     position: absolute;
-    top: -1vw;
-    left: -40vw;
-    width: 100%;
+    top: -10vw;
+    left: -115vw;
+    width: 180vw;
   }
   
   .main-hero img {
@@ -372,8 +372,9 @@ body {
   .box {
     height: 8vw;
     position: absolute;
-    top: 98vw;
-    left: 25vw;
+    top: 170vw;
+    left: 17vw;
+    width: 71.5vw;
   }
   
   .title {
@@ -382,28 +383,32 @@ body {
     display: flex;
     align-items: center;
     height: 6.5vw;
-  }                         
+  } 
+
+  .title h1 {
+    font-size: 7vw;
+  }
 
   .container {
     position: absolute;
     text-align: center;
-    top: 105vw;
+    top: 155vw;
     width: 100%;
     left: 0;
     height: 34vw;
-    padding-top: 40px;
+    padding-top: 50vw;
   } 
 
   .container .deskripsi h2 {
     color: #fff;
-    font-size: 3vw;
+    font-size: 5vw;
     font-family: monospace;
   }
   
   
   .container .deskripsi h1 {
     color: #fff;
-    font-size: 6vw;
+    font-size: 8vw;
     font-family: monospace;
     padding-top: 10px;
   }
@@ -413,16 +418,17 @@ body {
     font-family: monospace;
     color: #fff;
     text-align: center;
-    font-size: 2vw;
-    width: 75%;
-    left: 13.5vw;
+    font-size: 3.3vw;
+    /* width: 75%; */
+    margin-left: 2vw;
+    /* border: 10px solid red; */
   }
 
   .icon {
     position: absolute;
     left: 0;
     width: auto;
-    top: 163vw;
+    top: 280vw;
   }
   
   .icon .instagram img {
