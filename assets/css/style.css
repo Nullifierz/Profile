@@ -303,6 +303,10 @@ body {
 
 /* Kodingan UntuK tampilan */
 @media screen and (max-width: 764px) {
+  body {
+    overflow-y: scroll;
+  }
+  
   #navigasi {
     position: absolute;
     height: 100px;
